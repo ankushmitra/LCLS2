@@ -4,3 +4,9 @@
 # Ignore PYTHON PYC generated files
 *.pyc
 
+# Ignore log files
+*.log
+
+# Ignore Excel files
+*.xlsx
+

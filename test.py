@@ -23,3 +23,6 @@ sxr.add_device("FISH",10.0)
 
 print sxr
 
+df = LCLS2.from_excel("Component List.xlsx")
+
+
