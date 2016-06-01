@@ -31,7 +31,23 @@ class Beamline :
 
 
     def count_devices(self) :
-        pass
-        
-    
+        count_list = {}
+        for dev in self.devices :
+            if count_list.has_key(dev[0].name) :
+                count_list[dev[0].name] += 1
+            else :
+                count_list[dev[0].name] = 1
+        return count_list
 
+    def count_components(self) :
+        count_list = {}
+        for dev in self.devices :
+            dev_count = dev[0].count()
+
+            for key,val in dev_count.iteritems() :
+                if count_list.has_key(key) :
+                    count_list[key] += val
+                else :
+                    count_list[key] = val
+
+        return count_list

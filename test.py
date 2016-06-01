@@ -39,3 +39,6 @@ print shutter.count()
 print shutter.count("gauge")
 print shutter.count("FISH")
 
+print sxr
+print sxr.count_devices()
+print sxr.count_components()
