@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 class Device :
     def __init__(self,device_name) :
         self.name = device_name
@@ -32,4 +34,32 @@ class Device :
         # got here...everything matched
         return True
 
+    # Component count
+    #  - if component given, returns count of the component
+    #  - if no argument given, then dict of component:count returned
+    def count(self,component=None) :
+        if component is None :
+            return self.__count_all()
+        else :
+            return self.__count_component(component)
 
+
+    # Private function to return component counts
+    def __count_component(self,component) :
+
+        try:
+            count = getattr(self,component)
+            return count
+        except AttributeError :
+            print component,"does not exist"
+            return None
+    
+
+    def __count_all(self) :
+
+        all_components = deepcopy(self.__dict__)
+        del all_components["name"]
+        return all_components
+
+            
+        
