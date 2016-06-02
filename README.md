@@ -23,4 +23,6 @@ If you run the test code in ipython, you can use ipython 'tab' to see all the at
 
 ## todo...
  - ~~create a beamline_list that will have all the beamlines and how they are composed~~
+ - Use read-in components list to generate _Excel File_ config 
+ - check if PANDAS can read/write excel Formulas
  - 
