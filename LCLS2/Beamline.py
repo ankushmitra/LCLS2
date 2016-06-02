@@ -14,7 +14,7 @@ class Beamline :
     # be accessed by Beamline.device notation
     def add_device(self, device, location) :
         # check if device object exits
-        if device_list.has_key(device) :
+        if device in device_list :
             self.devices.append( (device_list[device],location) )
         else :
             print device,"has not been defined"

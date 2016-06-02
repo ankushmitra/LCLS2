@@ -32,9 +32,6 @@ sxr.add_device("FISH",10.0)
 
 print sxr
 
-df = LCLS2.from_excel("Component List.xlsx")
-print LCLS2.device_list.keys()
-
 print shutter.count()
 print shutter.count("gauge")
 print shutter.count("FISH")
@@ -42,3 +39,12 @@ print shutter.count("FISH")
 print sxr
 print sxr.count_devices()
 print sxr.count_components()
+
+
+
+df = LCLS2.from_excel("Component List.xlsx")
+print LCLS2.device_list.keys()
+print LCLS2.beamline_list
+
+
+
