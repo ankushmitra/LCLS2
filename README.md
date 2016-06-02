@@ -22,4 +22,5 @@ All the code is contained in the LCLS2 module
 If you run the test code in ipython, you can use ipython 'tab' to see all the attributes of each device.
 
 ## todo...
- - create a beamline_list that will have all the beamlines and how they are composed 
+ - ~~create a beamline_list that will have all the beamlines and how they are composed~~
+ - 
